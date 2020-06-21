@@ -11763,6 +11763,10 @@ ul {
   background-repeat: no-repeat;
 }
 
+.bg-dark {
+  background-color: #121212 !important;
+}
+
 .pagUnderline {
   text-decoration: underline;
 }
@@ -11826,6 +11830,48 @@ ul {
 @media (min-width: 768px) {
   .card-columns .card-img-top {
     max-height: inherit;
+  }
+}
+
+.tab-content .card:nth-child(1) img,
+.tab-content .card:nth-child(5) img,
+.tab-content .card:nth-child(9) img {
+  height: 350px;
+}
+
+@media (max-width: 767px) {
+  .tab-content .card:nth-child(1) img,
+  .tab-content .card:nth-child(5) img,
+  .tab-content .card:nth-child(9) img {
+    height: 161px;
+  }
+}
+
+.tab-content .card:nth-child(2) img,
+.tab-content .card:nth-child(6) img,
+.tab-content .card:nth-child(7) img {
+  height: 240px;
+}
+
+@media (max-width: 767px) {
+  .tab-content .card:nth-child(2) img,
+  .tab-content .card:nth-child(6) img,
+  .tab-content .card:nth-child(7) img {
+    height: 161px;
+  }
+}
+
+.tab-content .card:nth-child(3) img,
+.tab-content .card:nth-child(4) img,
+.tab-content .card:nth-child(8) img {
+  height: 480px;
+}
+
+@media (max-width: 767px) {
+  .tab-content .card:nth-child(3) img,
+  .tab-content .card:nth-child(4) img,
+  .tab-content .card:nth-child(8) img {
+    height: 161px;
   }
 }
 

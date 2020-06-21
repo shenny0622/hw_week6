@@ -1,0 +1,24 @@
+.tab-content .card:nth-child(1) img,
+.tab-content .card:nth-child(5) img,
+.tab-content .card:nth-child(9) img{
+    height: 350px;
+    @media (max-width:767px) {
+        height: 161px;
+    }
+}
+.tab-content .card:nth-child(2) img,
+.tab-content .card:nth-child(6) img,
+.tab-content .card:nth-child(7) img {
+    height: 240px;
+    @media (max-width:767px) {
+        height: 161px;
+    }
+}
+.tab-content .card:nth-child(3) img,
+.tab-content .card:nth-child(4) img,
+.tab-content .card:nth-child(8) img {
+    height: 480px;
+    @media (max-width:767px) {
+        height: 161px;
+    }
+}
