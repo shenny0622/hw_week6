@@ -1,0 +1,32 @@
+// .pagination{
+//     .page-item{
+//     font-size: 24px;
+//     line-height: 36px;
+//     padding: 0 16px;
+//     &:active{
+//         color: $primary;
+//         text-decoration: underline;
+//      }
+//   }
+// }
+
+//ask!為何這樣寫三個a都吃到underline?
+
+// .pagination{
+//     li{
+//         a:first-child{
+//             text-decoration: underline;
+//         }
+//     }
+// }
+.pagUnderline{
+    text-decoration: underline;
+}
+.pagination{
+    .page-item{
+        font-size: 24px;
+        line-height: 36px;
+    }
+
+}
+

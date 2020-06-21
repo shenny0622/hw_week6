@@ -1,0 +1,47 @@
+// .card-columns{
+//     .card{
+//         border:0;
+//         border: none;
+//     }
+// }
+//清楚border框線，也可直接於class寫border-0
+
+.card-body{
+    padding-left: 0;
+    padding-top: 1px; //為什麼card-body跟圖片有距離？images已經有清除高度了
+}
+
+.card-columns {
+    // 這邊我寫不出來 不太理解這個部分
+    column-count: 1 !important;
+    @include media-breakpoint-up(sm) {
+      column-count: 2 !important;
+    }
+    @include media-breakpoint-up(md) {
+      column-count: 3 !important;
+    }
+    .card{
+      margin-right: 0;
+      margin-bottom: 3rem;
+      &-img-text{
+        position: relative;
+        // display: block;
+        &::after{
+          position: absolute;
+          content:'On Sale';
+          right:0.5rem;
+          top:0.5rem;
+          color: white;
+          font-weight: bold;
+        }
+      }
+      &-img-top {
+        object-fit: cover;
+        max-height: 160px;
+        @include media-breakpoint-up(md) {
+          max-height: inherit;
+        }
+      }
+    }
+  }
+  

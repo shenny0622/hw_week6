@@ -1,0 +1,21 @@
+.navbar-brand {
+    font-style: italic;
+    font-family: 'Raleway', sans-serif;
+}
+
+// .nav-item dropdown{
+//     display: none ;
+// }
+
+.nav-underline {
+    .nav-link {
+      color: $secondary;
+      font-weight: 700;
+    //   text-transform:capitalize;
+    
+      &.active {
+        color: $primary;
+        
+      }
+    }
+  }

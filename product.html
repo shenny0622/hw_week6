@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CRAFTsMAN 產品</title>
+    <!-- google fonts字體樣式  好像沒改到字體樣式-->
+    <!-- <link
+    href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,900&display=swap" rel="stylesheet">
+    <!-- 自己寫的 CSS -->
+    <link rel="stylesheet" href="./assets/style/all.css">
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  </head>
+
+  <body>
+    <header>
+      <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-transparent px-0">
+
+          <!-- 漢堡選單 bs4是從手機寫到桌機 -->
+          <button class="navbar-toggler border-0 pl-0" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <i class="material-icons text-white">dehaze</i>
+          </button>
+          <!-- logo text-whites拿掉 -->
+          <!-- <a class="navbar-brand text-white text-md-dark font-weight-bold" href="#">CRAFTsMAN</a> -->
+          <a class="navbar-brand text-md-dark font-weight-bold" href="#">CRAFTsMAN</a>
+           <!-- 購物車icon  text-white拿掉-->
+          <a class="nav-link pr-0 order-md-3" href="#" data-toggle="modal" data-target="#cartModal">
+            <i class="material-icons">shopping_cart</i>
+          </a>
+          
+          <!-- ask! product要如於pc版選單隱藏？ -->
+          <!-- 漢堡選單展開來內容 -->
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-list navbar-nav w-100 d-flex justify-content-md-end">
+              <li class="d-flex d-md-none mb-5">
+                <a href="#" class="back text-dark mr-auto"><i class="material-icons">arrow_back</i></a>
+                <a href="#" class="cart text-dark"><i class="material-icons">shopping_cart</i></a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link text-body dropdown-toggle pr-7" id="navbarDropdown" role="button" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">Product</a>
+                <div class="dropdown-menu border-0" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="product.html">All<sup>24</sup></a>
+                  <a class="dropdown-item" href="#">Bowl<sup>10</sup></a>
+                  <a class="dropdown-item" href="#">Cup<sup>8</sup></a>
+                  <a class="dropdown-item" href="#">Plate<sup>3</sup></a>
+                  <a class="dropdown-item" href="#">Vase<sup>3</sup></a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-body pr-7" href="#">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-body pr-7" href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+  
+    
+<main>
+  <!-- 上方nav -->
+  <!-- ask! text-capitalize只能放在p段落，要如何讓a連結字首改為大寫 其餘皆小寫？ -->
+    <nav class=" nav-scroller bg-light mb-7">
+      <ul class="nav nav-underline container" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <a class="nav-link active" id="all-tab" data-toggle="tab" href="#all" role="tab" aria-controls="home"
+            aria-selected="true">ALL<sup>24</sup></a>
+        </li>
+        <li class="nav-item" role="presentation">
+          <a class="nav-link" id="bowl-tab" data-toggle="tab" href="#bowl" role="tab" aria-controls="home"
+            aria-selected="true">BOWL<sup>10</sup></a>
+        </li>
+        <li class="nav-item" role="presentation">
+          <a class="nav-link" id="cup-tab" data-toggle="tab" href="#cup" role="tab" aria-controls="home"
+            aria-selected="true">CUP<sup>8</sup></a>
+        </li>
+        <li class="nav-item" role="presentation">
+          <a class="nav-link" id="plate-tab" data-toggle="tab" href="#plate" role="tab" aria-controls="home"
+            aria-selected="true">PLATE<sup>3</sup></a>
+        </li>
+        <li class="nav-item" role="presentation">
+          <a class="nav-link" id="vase-tab" data-toggle="tab" href="#vase" role="tab" aria-controls="home"
+            aria-selected="true">VASE<sup>3</sup></a>
+        </li>
+      </ul>
+    </nav>
+  
+  
+    <div class="container">
+     <!-- card 瀑布 -->
+      <div class="tab-content" id="myTabContent">
+        <section class="tab-pane fade show active" id="all" role="tabpanel" aria-labelledby="all-tab">
+          <ul class="card-columns p-0">
+            <li class="card border-0 mb-4 mb-md-7">
+              <div class="card-img-text">
+                <img src="./assets/images/img-1.jpg" class="card-img-top mb-2" alt="...">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title font-weight-bold mb-1">Tatami Cup</h5>
+                <p class="card-text">NT$1,080<span class="text-secondary ml-2"><s>NT$1,200</s></span></p>
+              </div>
+            </li>
+            <li class="card border-0 mb-4 mb-md-7">
+              <img src="./assets/images/img-6.jpg" class="card-img-top mb-2" alt="...">
+              <div class="card-body">
+                <h5 class="card-title font-weight-bold mb-1">Limdae Cup</h5>
+                <p class="card-text">NT$2,400</p>
+              </div>
+            </li>
+            <li class="card border-0 mb-4 mb-md-7">
+              <img src="./assets/images/img-8.jpg" class="card-img-top mb-2" alt="...">
+              <div class="card-body">
+                <h5 class="card-title font-weight-bold mb-1">Kabi Mug</h5>
+                <p class="card-text">NT$980</p>
+              </div>
+            </li>
+            <li class="card border-0 mb-4 mb-md-7">
+              <div class="card-img-text">
+                <img src="./assets/images/img-5.jpg" class="card-img-top mb-2" alt="...">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title font-weight-bold mb-1">Hana Vase</h5>
+                <p class="card-text">NT$3,600<span class="text-secondary ml-2"><s>NT$3,880</s></span></p>
+              </div>
+            </li>
+            <li class="card border-0 mb-4 mb-md-7">
+              <img src="./assets/images/img-3.jpg" class="card-img-top mb-2" alt="...">
+              <div class="card-body">
+                <h5 class="card-title font-weight-bold mb-1">Sumo Vase</h5>
+                <p class="card-text">NT$4,800</p>
+              </div>
+            </li>
+            <li class="card border-0 mb-4 mb-md-7">
+              <img src="./assets/images/img-9.jpg" class="card-img-top mb-2" alt="...">
+              <div class="card-body">
+                <h5 class="card-title font-weight-bold mb-1">Shiro Plate</h5>
+                <p class="card-text">NT$1,200</p>
+              </div>
+            </li>
+            <li class="card border-0 mb-4 mb-md-7">
+              <div class="card-img-text">
+                <img src="./assets/images/img-4.jpg" class="card-img-top mb-2" alt="...">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title font-weight-bold mb-1">Baifan Bowl</h5>
+                <p class="card-text">NT$1,800<span class="text-secondary ml-2"><s>NT$1,980</s></span></p>
+              </div>
+            </li>
+            <li class="card border-0 mb-4 mb-md-7">
+              <img src="./assets/images/img-7.jpg" class="card-img-top mb-2" alt="...">
+              <div class="card-body">
+                <h5 class="card-title font-weight-bold mb-1">Ceramic Vase</h5>
+                <p class="card-text">NT$3,600</p>
+              </div>
+            </li>
+            <li class="card border-0 mb-4 mb-md-7">
+              <img src="./assets/images/img-2.jpg" class="card-img-top mb-2" alt="...">
+              <div class="card-body">
+                <h5 class="card-title font-weight-bold mb-1">Couple Collection</h5>
+                <p class="card-text">NT$2,800</p>
+              </div>
+            </li>
+          </ul>
+        </section>
+  
+        <!-- <section class="tab-pane fade" id="bowl" role="tabpanel" aria-labelledby="bowl-tab">...</section>
+        <section class="tab-pane fade" id="cup" role="tabpanel" aria-labelledby="cup-tab">...</section>
+        <section class="tab-pane fade" id="plate" role="tabpanel" aria-labelledby="plate-tab">...</section>
+        <section class="tab-pane fade" id="vase" role="tabpanel" aria-labelledby="vase-tab">...</section> -->
+      </div>
+  
+  
+      <!-- pagination -->
+      <!-- <nav class="mb-7">
+        <ul class="pagination justify-content-center"> -->
+          <!-- 把a page-link拿掉 -->
+          <!-- <li class="page-item"><a class="active" href="#">1</a></li>
+          <li class="page-item"><a class="text-dark" href="#">2</a></li>
+          <li class="page-item"><a class="text-dark" href="#">3</a></li>
+        </ul>
+      </nav> -->
+      <nav class="mb-7">
+        <ul class="pagination justify-content-center">
+          <li class="page-item"><a class="page-link active border-0 bg-white pagUnderline" href="#">1</a></li>
+          <li class="page-item"><a class="page-link text-dark border-0 bg-white" href="#">2</a></li>
+          <li class="page-item"><a class="page-link text-dark border-0 bg-white" href="#">3</a></li>
+        </ul>
+      </nav>
+  
+    </div>
+  </main>
+    <!-- 下方banner -->
+    <div class="jumbotron jumbotron-fluid mb-0 text-white">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-5">
+            <h3 class="h1 mb-7">Subscribe for news<br> and special offers!</h3>
+            <div class="input-group input-group-lg">
+              <input type="text" class="form-control bg-transparent" placeholder="Your email address"
+                aria-label="Recipient's username" aria-describedby="button-addon2">
+              <div class="input-group-append">
+                <button class="btn btn-primary" type="button" id="button-addon2">Subscribe</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- footer -->
+    <footer class="bg-dark text-white">
+      <ul class="navbar navbar-dark container mb-0 flex-column flex-md-row align-items-start align-items-md-center">
+        <li class="nav-item mt-3 mt-md-0 mb-6 mb-md-0">
+          <a class="navbar-brand font-weight-bold h4 mb-0">CRAFTsMAN</a>
+        </li>
+        <li class="nav-item mr-md-auto mb-4 mb-md-0 order-4 order-md-0">
+          <small> © 2020. All Rights Reserved.</small>
+        </li>
+  
+        <li class="nav-item">
+          <a class="nav-link pl-0 px-md-4 text-white" href="#"><small>Purchase Policy</small></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link pl-0 px-md-4 text-white" href="#"><small>Privacy Policy</small></a>
+        </li>
+        <li class="nav-item mb-6 mb-md-0">
+          <a class="nav-link pl-0 px-md-4 text-white" href="#"><small>Terms & Conditions</small></a>
+        </li>
+      </ul>
+    </footer>
+
+    <script src="./assets/js/vendors.js"></script>
+    <script src="./assets/js/all.js"></script>
+  </body>
+
+</html>
